@@ -6,20 +6,31 @@
 
 2.初始化:
     KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(appid,secret);
+    
 3.初始化入参:
     QueryDeviceExistRequest queryDeviceExistRequest=new QueryDeviceExistRequest();
     queryDeviceExistRequest.setSn(testSn);
+    
 4.调用sdk
     kuaimaiClient.getAcsResponse(queryDeviceExistRequest);
+    
 
 入参说明：
+
     QueryDeviceExistRequest：查询设备是否存在
+    
     QueryDeviceStatusRequest:查询设备状态
+    
     EscInstructRequest:esc打印
+    
     escInstructCreator:esc指令组装器
+    
     TsplInstructRequest:tspl打印
+    
     TsplInstructCreator:tspl指令组装器
+    
     AsyResultRequest:异步打印结果查询
+    
 
 
 
