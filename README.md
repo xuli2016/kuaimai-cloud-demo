@@ -5,13 +5,17 @@
 1.使用之前需要去快麦开放平台申请appid和secret
 
 2.初始化:
+
     KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(appid,secret);
     
 3.初始化入参:
+
     QueryDeviceExistRequest queryDeviceExistRequest=new QueryDeviceExistRequest();
+    
     queryDeviceExistRequest.setSn(testSn);
     
 4.调用sdk
+
     kuaimaiClient.getAcsResponse(queryDeviceExistRequest);
     
 
@@ -35,8 +39,11 @@
 
 
 EscInstructCreator:
-    添加文本
+
+    //添加文本
+    
     addText(EscInstructCreator escInstructCreator, String content, String font, String align, Integer feed, Integer nextX, Integer bold, Integer unline, Integer rota);
+    
     content：文本内容
     font：字体大小，由两位数字组成的字符串，前一位数字表示宽的倍数，后一位数字表示高的倍数；例如font="12"表示（2倍宽3倍高）；不传默认是00
     align：对齐方式，取值：center-居中，left-左对齐，right-右对齐,默认居中
