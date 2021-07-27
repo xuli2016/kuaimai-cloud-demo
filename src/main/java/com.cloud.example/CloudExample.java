@@ -187,8 +187,7 @@ public class CloudExample {
                 .addText(creator,"西湖区小路109号",50,560,"0")
                 .addBarcode(creator,"11578904944095",210,618,null,50,3,3)
                 .addText(creator,"本包裹由快麦提供技术支持",120,900,"0",1)
-                .addQrcode(creator,"http://www.kuaimai.com",440,860,5)
-                .print(creator);
+                .addQrcode(creator,"http://www.kuaimai.com",440,860,5);
          **/
 
     }
