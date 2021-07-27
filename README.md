@@ -78,10 +78,14 @@ EscInstructCreator:
     align:对齐方式，取值：center-居中，left-左对齐，right-右对齐,默认左对齐
 
 TsplInstructCreator:
+
     //设置打印区域
     setSize(TsplInstructCreator tsplInstructCreator, Integer width, Integer height);
+    
     width:宽度
+    
     height:高度
+    
 
     //添加文本
     addText(TsplInstructCreator tsplInstructCreator, String content, Integer x, Integer y, String font, Integer bold, Integer xMultiple, Integer yMultiple, Integer rotate, Integer waterMark, Integer bgbx, Integer bgby, Integer bgbWidth, Integer bgbHeight);
