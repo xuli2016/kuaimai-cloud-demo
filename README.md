@@ -27,7 +27,7 @@
     
     EscInstructRequest:esc打印
     
-    escInstructCreator:esc指令组装器
+    EscInstructCreator:esc指令组装器
     
     TsplInstructRequest:tspl打印
     
