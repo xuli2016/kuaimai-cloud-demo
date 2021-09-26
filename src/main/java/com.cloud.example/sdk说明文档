@@ -191,3 +191,9 @@ TsplInstructCreator:
      width:宽度,默认是100
      height:高度,默认是50
      thickness:线条宽度,默认是1
+
+      //添加图片
+      addImg(TsplInstructCreator tsplInstructCreator, String base64Content, Integer x, Integer y);
+      x:起始x坐标,默认是1
+      y:起始y坐标,默认是1
+      base64Content:图片的base64数据(不带base64前缀)
