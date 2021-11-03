@@ -1,6 +1,6 @@
 # kuaimai-cloud-demo
 
-引入kuaimai-core-1.0.0.jar;在lib文件夹中
+引入kuaimai-core-1.0.1.jar;在lib文件夹中
 
 1.使用之前需要去快麦开放平台 https://open.iot.kuaimai.com/#/home 申请appid和secret
 
