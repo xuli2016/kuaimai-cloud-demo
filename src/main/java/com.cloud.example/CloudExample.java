@@ -14,11 +14,14 @@ import com.kuaimai.core.request.*;
  */
 public class CloudExample {
 
-    public final static String accessKey="快麦开放平台申请的appid";
+//    public final static String accessKey="快麦开放平台申请的appid";
+    public final static String accessKey="10003";
 
-    public final static String secret="快麦开放平台申请的secret";
+//    public final static String secret="快麦开放平台申请的secret";
+    public final static String secret="d3eccf4a69cba1934142762787e0011b";
 
-    private static String testSn="打印机的序列号";
+//    private static String testSn="打印机的序列号";
+    private static String testSn="KMQSQ520500002";
 
     public static void main(String[] args) throws Exception{
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
@@ -134,7 +137,7 @@ public class CloudExample {
 
         /**EscInstructCreator，组建指令模版示例
         EscInstructCreator creator=new EscInstructCreator();
-        creator.addText(creator,"示例模版","11")
+         creator.addText(creator,"示例模版","11")
                 .addText(creator,"店铺名称")
                 .addText(creator,"#3 美团外卖")
                 .addText(creator,"下单时间：2021-01-10 15:15:15",null,"left")
@@ -157,8 +160,8 @@ public class CloudExample {
                 .addText(creator,"长河街道江南大道588号恒鑫大厦9楼9001",null,"left",3)
                 .addBarcode(creator,"123567891234567",80,2,1,null,null,"center",1)
                 .addQrcode(creator,"http://www.baidu.com",6,"center",5)
-                .print(creator);
-         **/
+                .print(creator);**/
+
 
         /**TsplInstructCreator，组建指令模版示例
         TsplInstructCreator creator=new TsplInstructCreator();
@@ -189,6 +192,17 @@ public class CloudExample {
                 .addText(creator,"本包裹由快麦提供技术支持",120,900,"0",1)
                 .addQrcode(creator,"http://www.kuaimai.com",440,860,5);
          **/
+
+        /**面单机打印esc指令**/
+        EscInstructCreator creator=new EscInstructCreator();
+        //...省略了组装指令部分
+        CombinationRequest combinationRequest=new CombinationRequest();
+        JSONArray job=new JSONArray();
+        job.add(creator.getInstructions());
+        combinationRequest.setSn(testSn);
+        combinationRequest.setJob(job);
+        combinationRequest.setAsy(false);
+        kuaimaiClient.getAcsResponse(combinationRequest);
 
     }
 
