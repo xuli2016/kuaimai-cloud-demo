@@ -14,14 +14,11 @@ import com.kuaimai.core.request.*;
  */
 public class CloudExample {
 
-//    public final static String accessKey="快麦开放平台申请的appid";
-    public final static String accessKey="10003";
+    public final static String accessKey="快麦开放平台申请的appid";
 
-//    public final static String secret="快麦开放平台申请的secret";
-    public final static String secret="d3eccf4a69cba1934142762787e0011b";
+    public final static String secret="快麦开放平台申请的secret";
 
-//    private static String testSn="打印机的序列号";
-    private static String testSn="KMQSQ520500002";
+    private static String testSn="打印机的序列号";
 
     public static void main(String[] args) throws Exception{
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
