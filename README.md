@@ -35,6 +35,7 @@
     
     AsyResultRequest:异步打印结果查询
     
+    CombinationRequest:面单机打印esc指令
 
 
 
