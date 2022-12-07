@@ -1,6 +1,6 @@
 # kuaimai-cloud-demo
 
-引入kuaimai-core-1.0.1.jar;在lib文件夹中
+引入kuaimai-core-1.0.2.jar;在lib文件夹中
 
 1.使用之前需要去快麦开放平台 https://open.iot.kuaimai.com/#/home 申请appid和secret
 
@@ -25,6 +25,12 @@
     
     QueryDeviceStatusRequest:查询设备状态
     
+    EscTemplatePrintRequest：小票模版esc打印
+    
+    TsplTemplatePrintRequest：标签模版tspl打印
+    
+    TsplTemplateWriteRequest: 小票模版tspl打印
+    
     EscInstructRequest:esc打印
     
     EscInstructCreator:esc指令组装器
@@ -33,9 +39,9 @@
     
     TsplInstructCreator:tspl指令组装器
     
-    AsyResultRequest:异步打印结果查询
+    ResultRequest:标签，面单机打印结果查询
     
-    CombinationRequest:面单机打印esc指令
+    CombinationRequest:标签，面单机打印esc指令
 
 
 

@@ -3,6 +3,7 @@ package com.cloud.example;
 
 import cn.hutool.json.JSON;
 import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.kuaimai.core.bean.ResponseEnvelope;
 import com.kuaimai.core.client.KuaimaiClient;
@@ -37,7 +38,7 @@ public class CloudExample {
          System.out.println(JSONUtil.toJsonStr(acsResponse));
          **/
 
-        /** 小票-esc模板打印
+        /** 小票模板esc打印
          EscTemplatePrintRequest escTemplatePrintRequest=new EscTemplatePrintRequest();
          escTemplatePrintRequest.setSn(testSn);
          escTemplatePrintRequest.setTemplateId(111L);
@@ -52,7 +53,7 @@ public class CloudExample {
          System.out.println(JSONUtil.toJsonStr(acsResponse));
          **/
 
-        /** 面单，标签-tspl模板打印
+        /** 标签模板tspl打印
          TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
          tsplTemplatePrintRequest.setSn(testSn);
          tsplTemplatePrintRequest.setTemplateId(111L);
@@ -70,7 +71,23 @@ public class CloudExample {
          System.out.println(JSONUtil.toJsonStr(acsResponse));
          **/
 
-        /**esc打印
+        /** 小票模板tspl打印
+        TsplTemplateWriteRequest tsplTemplateWriteRequest=new TsplTemplateWriteRequest();
+        tsplTemplateWriteRequest.setSn(testSn);
+        tsplTemplateWriteRequest.setTemplateId(111L);
+
+        JSONObject renderDataJson=new JSONObject();
+        JSONArray jsonArray=new JSONArray();
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("key_test","3449394");
+        jsonArray.add(jsonObject);
+        renderDataJson.put("table_test",jsonArray);
+        tsplTemplateWriteRequest.setRenderDataJson(renderDataJson);
+        ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
+        System.out.println(JSONUtil.toJsonStr(acsResponse));
+         **/
+
+        /**esc打印(小票机）
          EscInstructRequest escInstructRequest=new EscInstructRequest();
          escInstructRequest.setSn(testSn);
          String instructions="H3MCAAAAAAD/AAAdIQAbYQG687P4waoNCiM0IMPAzcXN4sL0DQodIQAbYQC2qbWlusWjujkwODg5NzMxNDAzMDc2Mzc0DQ" +
@@ -103,7 +120,7 @@ public class CloudExample {
          **/
 
 
-        /**tspl同步打印
+        /**tspl打印（标签，面单机）
          TsplInstructRequest tsplInstructRequest=new TsplInstructRequest();
          tsplInstructRequest.setSn(testSn);
          JSONArray jsonArray=new JSONArray();
@@ -113,23 +130,14 @@ public class CloudExample {
          System.out.println(JSONUtil.toJsonStr(acsResponse));
          **/
 
-        /**tspl异步打印
-         TsplInstructRequest tsplInstructRequest=new TsplInstructRequest();
-         tsplInstructRequest.setSn(testSn);
-         JSONArray jsonArray=new JSONArray();
-         jsonArray.add("CLS\r\nSIZE 75mm,100mm\r\nTEXT 50,50,\"0\",0,1,1,\"Hello World!\"\r\nPRINT 1\r\n");
-         tsplInstructRequest.setJob(jsonArray);
-         tsplInstructRequest.setAsy(true);
-         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplInstructRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
-         **/
 
-        /**tspl异步打印结果查询
-         AsyResultRequest asyResultRequest=new AsyResultRequest();
-         asyResultRequest.setSn(testSn);
+
+        /**tspl打印结果查询（标签，面单机）
+         ResultRequest resultRequest=new ResultRequest();
+         resultRequest.setSn(testSn);
          JSONArray jsonArray=new JSONArray();
          jsonArray.add("1626852091576");
-         asyResultRequest.setJobIds(jsonArray);
+         resultRequest.setJobIds(jsonArray);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(asyResultRequest);
          System.out.println(JSONUtil.toJsonStr(acsResponse));
          **/
