@@ -99,36 +99,11 @@ TsplInstructCreator:
     content:文本内容
     x:坐标x
     y:坐标y
-    font:字体类型,默认是1
-        0：Monotye CG Triumvirate Bold Condensed 可伸缩字体，中文24*24 英文12*24
-        1：8 x 12  固定间距点字体
-        2：12 x 20 固定间距点字体
-        3：16 x 24 固定间距点字体
-        4：24 x 32 固定间距点字体
-        5：32 x 48 点固定间距字体
-        6：14 x 19 点固定间距字体库- b
-        7：21 x 27 点固定间距字体库- b
-        8：14 x25  点固定间距字体库
-        ROMAN.TTF：Monotye CG Triumvirate Bold Condensed 固定百分比尺寸字体
-        1.EFT: EPL2 font 1
-        2.EFT: EPL2 font 2
-        3.EFT: EPL2 font 3
-        4.EFT: EPL2 font 4
-        5.EFT: EPL2 font 5
-        A.FNT: ZPL2 font A
-        B.FNT: ZPL2 font B
-        D.FNT: ZPL2 font D
-        E8.FNT: ZPL2 font E8
-        F.FNT: ZPL2 font F
-        G.FNT: ZPL2 font G
-        H8.FNT: ZPL2 font H8
-        GS.FNT: ZPL2 font GS
-        TSS12.BF2: TSS 12*12点阵
+    font:字体类型,默认是TSS24.BF2
+
         TSS16.BF2: TSS 16*16点阵
-        TSS20.BF2: TSS 20*20点阵
         TSS24.BF2: TSS 24*24点阵
-        TSS28.BF2: TSS 28*28点阵
-        TSS32.BF2: TSS 32*32点
+
 
     bold: 是否加粗,0:不加粗；1:加粗,默认是0
     xMultiple:宽的倍数, 默认是1
