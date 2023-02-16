@@ -24,11 +24,11 @@ public class CloudExample {
     public static void main(String[] args) throws Exception{
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
 
-        /**查询设备是否存在**/
+        /**查询设备是否存在
          QueryDeviceExistRequest queryDeviceExistRequest=new QueryDeviceExistRequest();
          queryDeviceExistRequest.setSn(testSn);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(queryDeviceExistRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
 
         /**查询设备状态
@@ -68,8 +68,8 @@ public class CloudExample {
          renderDataJsonArray.add(renderDataJson);
          tsplTemplatePrintRequest.setRenderDataJsonArray(renderDataJsonArray);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
-         **/
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
 
         /** 小票模板tspl打印
         TsplTemplateWriteRequest tsplTemplateWriteRequest=new TsplTemplateWriteRequest();
@@ -123,12 +123,11 @@ public class CloudExample {
         /**tspl打印（标签，面单机）
          TsplInstructRequest tsplInstructRequest=new TsplInstructRequest();
          tsplInstructRequest.setSn(testSn);
-         JSONArray jsonArray=new JSONArray();
-         jsonArray.add("CLS\r\nSIZE 75mm,100mm\r\nTEXT 50,50,\"0\",0,1,1,\"Hello World!\"\r\nPRINT 1\r\n");
-         tsplInstructRequest.setJob(jsonArray);
+         String instructs="CLS\r\nSIZE 75mm,100mm\r\nTEXT 50,50,\"0\",0,1,1,\"Hello World!\"\r\nPRINT 1\r\n";
+         tsplInstructRequest.setInstructs(instructs);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplInstructRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
-         **/
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
 
 
 
@@ -136,11 +135,11 @@ public class CloudExample {
          ResultRequest resultRequest=new ResultRequest();
          resultRequest.setSn(testSn);
          JSONArray jsonArray=new JSONArray();
-         jsonArray.add("1626852091576");
+         jsonArray.add("1676539452399");
          resultRequest.setJobIds(jsonArray);
-         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(asyResultRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
-         **/
+         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(resultRequest);
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
 
         /**利用tspl指令构造器打印
          TsplInstructRequest tsplInstructRequest=new TsplInstructRequest();
@@ -160,13 +159,16 @@ public class CloudExample {
          instructCreator.addImg(instructCreator,imgBase64,20,330);
          //添加线框
          instructCreator.addBox(instructCreator,20,400,100,500);
+         //添加横线
+         instructCreator.addBar(instructCreator,20,510,80,2);
+         //添加竖线
+         instructCreator.addBar(instructCreator,150,505,2,100);
          //添加圆
          instructCreator.addCircle(instructCreator,20,550);
          //添加椭圆
          instructCreator.addEllipse(instructCreator,20,700);
 
-         jsonArray.add(instructCreator.print(tsplInstructRequest,instructCreator));
-         tsplInstructRequest.setJob(jsonArray);
+         tsplInstructRequest.setInstructs(instructCreator.print(tsplInstructRequest,instructCreator));
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplInstructRequest);
          System.out.println(JSONUtil.toJsonStr(acsResponse));
          **/
@@ -233,15 +235,16 @@ public class CloudExample {
 
         /**面单机打印esc指令
          EscInstructCreator creator=new EscInstructCreator();
+         creator.addText(creator,"示例模版");
+         creator.addBarcode(creator,"123567891234567",80,2,1,null,null,"center",1);
+         creator.addQrcode(creator,"http://www.baidu.com",6,"center",5);
+         creator.print(creator);
          //...省略了组装指令部分
          CombinationRequest combinationRequest=new CombinationRequest();
-         JSONArray job=new JSONArray();
-         job.add(creator.getInstructions());
          combinationRequest.setSn(testSn);
-         combinationRequest.setJob(job);
-         combinationRequest.setAsy(false);
-         kuaimaiClient.getAcsResponse(combinationRequest);
-         **/
+         combinationRequest.setInstructs(creator.getInstructions());
+         kuaimaiClient.getAcsResponse(combinationRequest);**/
+
 
     }
 
