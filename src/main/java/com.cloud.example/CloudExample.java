@@ -1,13 +1,14 @@
 package com.cloud.example;
 
 
-import cn.hutool.json.JSON;
 import cn.hutool.json.JSONArray;
-import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.kuaimai.core.bean.ResponseEnvelope;
 import com.kuaimai.core.client.KuaimaiClient;
-import com.kuaimai.core.request.*;
+import com.kuaimai.core.request.QueryDeviceStatusRequest;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author: xuli
@@ -33,15 +34,18 @@ public class CloudExample {
 
         /**查询设备状态
          QueryDeviceStatusRequest queryDeviceStatusRequest=new QueryDeviceStatusRequest();
-         queryDeviceStatusRequest.setSn(testSn);
+         JSONArray array=new JSONArray();
+         array.add(testSn);
+         queryDeviceStatusRequest.setSns(array.toString());
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(queryDeviceStatusRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
-         **/
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
 
         /** 小票模板esc打印
          EscTemplatePrintRequest escTemplatePrintRequest=new EscTemplatePrintRequest();
          escTemplatePrintRequest.setSn(testSn);
          escTemplatePrintRequest.setTemplateId(111L);
+         escTemplatePrintRequest.setType(2);
          JSONObject renderDataJson=new JSONObject();
          JSONArray jsonArray=new JSONArray();
          JSONObject jsonObject=new JSONObject();
@@ -50,8 +54,8 @@ public class CloudExample {
          renderDataJson.put("table_test",jsonArray);
          escTemplatePrintRequest.setRenderDataJson(renderDataJson);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(escTemplatePrintRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
-         **/
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
 
         /** 标签模板tspl打印
          TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
@@ -116,8 +120,8 @@ public class CloudExample {
          escInstructCreator.print(escInstructCreator);
          escInstructRequest1.setInstructions(escInstructCreator.getInstructions());
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(escInstructRequest1);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
-         **/
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
 
 
         /**tspl打印（标签，面单机）
@@ -239,11 +243,15 @@ public class CloudExample {
          creator.addBarcode(creator,"123567891234567",80,2,1,null,null,"center",1);
          creator.addQrcode(creator,"http://www.baidu.com",6,"center",5);
          creator.print(creator);
+         //combinationRequest.setInstructs(creator.getInstructions());
          //...省略了组装指令部分
          CombinationRequest combinationRequest=new CombinationRequest();
          combinationRequest.setSn(testSn);
-         combinationRequest.setInstructs(creator.getInstructions());
-         kuaimaiClient.getAcsResponse(combinationRequest);**/
+         String instructs="GxEBHUwAABthAB0hABthAR0hEU9UKM/6ytu1pSkdIQAKHUwAABthAB0hAAodTAAAG2EAHSEAtaW6xaO6MDA1MTA0ICAgICAgICDKsbzko7oyMDIyLTAzLTE3IDEwOjU4OjQ3ICAKHUwAABthAB0hAL/Nu6ejutaus/UxteoKHUwAABthAB0hALXq1LGjutK7usUKHUwAABthAB0hAC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtCh1MAAAbYQAdIQC/7rrFLMP7s8YgICAgICAgICAgICAgICDK/cG/ICAgtPKw/LzbICAgICAg0KG8xgodTAAAG2EAHSEANTQ2NjA5NzUs0MLU9snMxrdBMjU4ICAgMSAgICAgIDI4MCAgICAgICAgICAyODAKHUwAABthAB0hACAgICAgICAgICAgICBTICAgICAgICAgCh1MAAAbYQAdIQC67MmrICAgICAgICAgMSAgICAgICAgIAodTAAAG2EAHSEALSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0KHUwAABthAB0hALrPvMY6Mbz+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICDX3LbuOjI4MNSqCh1MAAAbYQAdIQAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLQodTAAAG2EAHSEA1fu1pdPFu92juiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMTUKHUwAABthAB0hAMbky/u30dPDo7ogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA2Ch1MAAAbYQAdIQDEqMHjvfC27qO6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAtMQodTAAAG2EAHSEAHSERus+8xqO6ICAgICAgICAgICAgICAgMjcwHSEACh1MAAAbYQAdIQAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLQodTAAAG2EAHSEAsb61pdOmytWjuiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyNzAKHUwAABthAB0hABtHAcnPtM7T4Lbuo7o4MDcgsb60zr3h0+CjujAgwNu8xtPgtu6jujgwNxtHAAodTAAAG2EAHSEALSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0KHUwAABthAB0hAB0hEbG+taXKtcrVo7ogICAgICAgICAgIDI3MB0hAAodTAAAG2EAHSEAHUwAABthAii747/uOqOkMjcwKQodTAAAG2EAHSEALSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0KHUwAABthAB0hAMzh0NE6yOfT0M7KzOLG38zsxNq197u709DQp6Ossru7u7/uo6yyu73Tyty2/rTOzcu79aOs0LvQu7rP1/ejoQodTAAAG2EAHSEAterGzLXY1rejutXjva3Kobq81t3K0MnPs8fH+L7FzOy5+rzKNMKlRDEzNrW1Ch1MAAAbYQAdIQC157uwo7oxNTM1NTAyNjg2NwodTAAAG2EAHSEACh1MAAAbYQAdIQDK1b/uyMujusLe0MK93AodTAAAG2EAHSEAytW/7tL40NCjusWp0rXS+NDQury6o9an0NAKHUwAABthAB0hAMrVv+7Vy7rFo7o2MjI4NDUwMzIwMDIyNjk2NjE5Ch1MAAAbYQAdIQAKHUwAABthAB0hALTy06HKsbzko7oyMDIyLTAzLTE4IDE3OjM1Ch1MAAAbYQAdIQAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLQodTAAAG2EAHSEA1MZlsaYt16jStcWu17C53MDtz7XNsyAtQW5kcm9pZCBWMS4wLjkxCh1MAAAbYQAdIQC/zbf+yMjP36O6NDAwIDYwNCA3Njg4Ch1MAAAbYQAdIQAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLQodTAAAG2EAHSEAG0wdUMvLG1cAAAAAgAKwABskCAAdJAAAHShrAwAxQwUdKGsDADFFMB0oayoAMVAwaHR0cDovL3llYi5tcG0uaW5rL3Rlc3Qtbm9ybWFsL2VQbFN2MmRHHShrAwAxUTAJGyTQAB0kAAAdKGsDADFDBR0oawMAMUUwHShrLwAxUDBodHRwczovL3Uud2VjaGF0LmNvbS9NS0hISlI2Y3h6MlctRGx3VGVza3pZMB0oawMAMVEwGwwYG1MdTAAAG2EAHSEAICAgyajC68jrv+IgICAgyajD6Lb+zqzC68ztvNMgICAgICAgICAgICAgICAgICAgICC6w9PRICAgICAgChVCG2QCHVYBG2QC";
+         combinationRequest.setInstructs(instructs);
+         combinationRequest.setExtra("0");
+         kuaimaiClient.getAcsResponse(combinationRequest);
+         **/
 
 
     }
