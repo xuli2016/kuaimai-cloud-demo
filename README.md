@@ -20,8 +20,9 @@
     
 
 入参说明：
-    BindDeviceRequest: 绑定设备
 
+    BindDeviceRequest: 绑定设备
+    
     QueryDeviceExistRequest：查询设备是否存在
     
     QueryDeviceStatusRequest:查询设备状态
