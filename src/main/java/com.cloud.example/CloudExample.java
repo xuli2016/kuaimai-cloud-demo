@@ -5,6 +5,7 @@ import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONUtil;
 import com.kuaimai.core.bean.ResponseEnvelope;
 import com.kuaimai.core.client.KuaimaiClient;
+import com.kuaimai.core.request.BindDeviceRequest;
 import com.kuaimai.core.request.QueryDeviceStatusRequest;
 
 import java.util.ArrayList;
@@ -24,6 +25,12 @@ public class CloudExample {
 
     public static void main(String[] args) throws Exception{
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
+
+        /**绑定设备 **/
+        BindDeviceRequest bindDeviceRequest=new BindDeviceRequest();
+        bindDeviceRequest.setSn(testSn);
+        ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(bindDeviceRequest);
+        System.out.println(JSONUtil.toJsonStr(acsResponse));
 
         /**查询设备是否存在
          QueryDeviceExistRequest queryDeviceExistRequest=new QueryDeviceExistRequest();
