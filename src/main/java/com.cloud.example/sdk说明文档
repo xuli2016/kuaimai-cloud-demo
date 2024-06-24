@@ -1,5 +1,5 @@
 
-引入kuaimai-core-1.0.6.jar;在lib文件夹中
+引入kuaimai-core-1.0.7.jar;在lib文件夹中
 
 1.使用之前需要去快麦开放平台申请appid和secret
 
@@ -20,6 +20,7 @@
     TsplTemplateWriteRequest:小票模版-间隙纸打印
     TsplXmlWriteRequest:自定义xml-间隙纸打印
     EscXmlWriteRequest:自定义xml-连续纸打印
+    TsplImageRequest:图片直接打印-间隙纸打印
     ResultRequest:打印结果查询
 
 
