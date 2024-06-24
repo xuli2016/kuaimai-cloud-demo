@@ -17,14 +17,11 @@ import java.util.List;
  */
 public class CloudExample {
 
-//    public final static String accessKey="快麦开放平台申请的appid";
-    public final static String accessKey="1612692487302";
+    public final static String accessKey="快麦开放平台申请的appid";
 
-//    public final static String secret="快麦开放平台申请的secret";
-    public final static String secret="aa880590cd8c4814a28599e8ab51fc01";
+    public final static String secret="快麦开放平台申请的secret";
 
-//    private static String testSn="打印机的序列号";
-    private static String testSn="KM118DW21470012";
+    private static String testSn="打印机的序列号";
 
     public static void main(String[] args) throws Exception{
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
