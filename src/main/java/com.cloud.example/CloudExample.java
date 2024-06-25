@@ -27,7 +27,7 @@ public class CloudExample {
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
 
         /**
-         * 以下函数可以对照https://cloudprint.kuaimai.com/#/openDev，http协议对接文档部门说明使用
+         * 以下函数可以对照https://cloudprint.kuaimai.com/#/openDev，http协议对接文档部分说明使用
          */
 
         /**绑定设备
