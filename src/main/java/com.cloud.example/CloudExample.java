@@ -63,7 +63,6 @@ public class CloudExample {
          tsplTemplatePrintRequest.setTemplateId(1634959702L);
          tsplTemplatePrintRequest.setRenderDataArray("[{\"table_test\":[{\"key_test\":\"3449394\"}]}]");
          tsplTemplatePrintRequest.setPrintTimes(1);
-         tsplTemplatePrintRequest.setImage(true);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
          System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
