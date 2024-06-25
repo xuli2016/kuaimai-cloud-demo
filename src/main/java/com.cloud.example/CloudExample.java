@@ -26,6 +26,10 @@ public class CloudExample {
     public static void main(String[] args) throws Exception{
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
 
+        /**
+         * 以下函数可以对照https://cloudprint.kuaimai.com/#/openDev，http协议对接文档部门说明使用
+         */
+
         /**绑定设备
         BindDeviceRequest bindDeviceRequest=new BindDeviceRequest();
         bindDeviceRequest.setSn(testSn);
