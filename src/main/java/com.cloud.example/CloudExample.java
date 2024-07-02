@@ -36,11 +36,11 @@ public class CloudExample {
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(bindDeviceRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
-        /**查询设备是否存在**/
+        /**查询设备是否存在
          QueryDeviceExistRequest queryDeviceExistRequest=new QueryDeviceExistRequest();
          queryDeviceExistRequest.setSn(testSn);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(queryDeviceExistRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));
+         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
 
         /**查询设备状态
@@ -64,7 +64,7 @@ public class CloudExample {
         /** 标签模板-间隙纸打印
          TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
          tsplTemplatePrintRequest.setSn(testSn);
-         tsplTemplatePrintRequest.setTemplateId(1634959702L);
+         tsplTemplatePrintRequest.setTemplateId(1634962277L);
          tsplTemplatePrintRequest.setRenderDataArray("[{\"table_test\":[{\"key_test\":\"3449394\"}]}]");
          tsplTemplatePrintRequest.setPrintTimes(1);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
