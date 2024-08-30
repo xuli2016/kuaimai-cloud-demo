@@ -102,7 +102,7 @@ public class CloudExample {
 
 
 
-        /**打印结果查询
+        /**打印结果查询, 打印结果也可以在注册后台配置打印回调地址，通过推送的形式获取
          ResultRequest resultRequest=new ResultRequest();
          resultRequest.setSn(testSn);
          JSONArray jsonArray=new JSONArray();
