@@ -1,5 +1,5 @@
 
-引入kuaimai-core-1.1.0.jar;在lib文件夹中
+引入kuaimai-core-1.1.1.jar;在lib文件夹中
 
 1.使用之前需要去快麦开放平台申请appid和secret
 
@@ -100,41 +100,13 @@ TsplInstructCreator:
     y:坐标y
     codeType:条形码样式，默认是128
              128: Code 128, switching code subset automatically.
-             128M: Code 128, switching code subset manually.
-             EAN128: EAN128, switching code subset automatically.
-             25: Interleaved 2 of 5.
-             25C: Interleaved 2 of 5 with check digit.
              39: Code 39, switching standard and full ASCII mode automatically.
-             39C: Code 39 with check digit.
              93: Code 93.
              EAN13: EAN 13.
-             EAN13+2: EAN 13 with 2 digits add-on.
-             EAN13+5: EAN 13 with 5 digits add-on.
              EAN8: EAN 8.
-             EAN8+2: EAN 8 with 2 digits add-on.
-             EAN8+5: EAN 8 with 5 digits add-on.
-             CODA: Codabar.
-             POST: Postnet.
              UPCA: UPC-A.
-             UPCA+2: UPC-A with 2 digits add-on.
-             UPA+5: UPC-A with 5 digits add-on.
              UPCE: UPC-E.
-             UPCE+2: UPC-E with 2 digits add-on.
-             UPE+5: UPC-E with 5 digits add-on.
-             MSI: MSI.
-             MSIC: MSI with check digit.
-             PLESSEY: PLESSEY.
-             CPOST: China post.
-             ITF14: ITF14.
-             EAN14: EAN14.
-             11: Code 11.
-             TELEPEN: Telepen. *Since V6.89EZ.
-             TELEPENN: Telepen number. *Since V6.89EZ.
-             PLANET: Planet. *Since V6.89EZ.
-             CODE49: Code 49. *Since V6.89EZ.
-             DPI: Deutsche Post Identcode. *Since V6.91EZ.
-             DPL: Deutsche Post Leitcode. *Since V6.91EZ.
-             LOGMARS: A special use of Code 39. *Since V6.88EZ.
+
 
      height: 高度，单位dot,默认100
      narrow:窄条宽度，单位dot，默认2
