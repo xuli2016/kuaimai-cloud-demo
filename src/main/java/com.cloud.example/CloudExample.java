@@ -18,9 +18,7 @@ import java.util.List;
 public class CloudExample {
 
     public final static String accessKey="快麦开放平台申请的appid";
-
     public final static String secret="快麦开放平台申请的secret";
-
     private static String testSn="打印机的序列号";
 
     public static void main(String[] args) throws Exception{
