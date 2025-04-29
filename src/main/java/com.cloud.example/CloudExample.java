@@ -34,13 +34,6 @@ public class CloudExample {
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(bindDeviceRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
-        /**查询设备是否存在
-         QueryDeviceExistRequest queryDeviceExistRequest=new QueryDeviceExistRequest();
-         queryDeviceExistRequest.setSn(testSn);
-         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(queryDeviceExistRequest);
-         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
-
-
         /**查询设备状态
          QueryDeviceStatusRequest queryDeviceStatusRequest=new QueryDeviceStatusRequest();
          JSONArray array=new JSONArray();
