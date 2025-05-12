@@ -22,7 +22,7 @@
 			<artifactId>core</artifactId>
 			<version>1.0.1</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/kuaimai-core-1.1.4.jar</systemPath>
+			<systemPath>${project.basedir}/lib/kuaimai-core-1.1.5.jar</systemPath>
 		</dependency>
 
 	</dependencies>
