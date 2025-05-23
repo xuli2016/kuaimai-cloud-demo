@@ -111,6 +111,27 @@ public class CloudExample {
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplImageRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
+        /**语言播报
+        BroadcastRequest broadcastRequest=new BroadcastRequest();
+        broadcastRequest.setSn(testSn);
+        broadcastRequest.setVolume(80);
+        broadcastRequest.setVolumeContent("测试语言播报");
+        ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(broadcastRequest);
+        System.out.println(JSONUtil.toJsonStr(acsResponse)); **/
+
+        /**取消打印任务
+        CancelJobRequest cancelJobRequest=new CancelJobRequest();
+        cancelJobRequest.setSn(testSn);
+        ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(cancelJobRequest);
+        System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
+        /**解绑设备
+        UnbindDeviceRequest unbindDeviceRequest=new UnbindDeviceRequest();
+        unbindDeviceRequest.setSn(testSn);
+        unbindDeviceRequest.setDeviceKey("123456");
+        ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(unbindDeviceRequest);
+        System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+
         /********菜鸟云打印专用start********/
 
         //1.获取菜鸟云打印机code,code有效期时间为5分钟

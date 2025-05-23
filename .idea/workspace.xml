@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89a5d071-2724-40ca-a73d-9c60f5331896" name="Default Changelist" comment="update--1.0.3">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/kuaimai-core-1.1.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.1.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cloud.example/CloudExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cloud.example/CloudExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -92,6 +93,7 @@
       <select />
     </treeState>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/bin/php" />
   <component name="ProjectFrameBounds">
     <option name="x" value="35" />
     <option name="y" value="35" />
@@ -133,20 +135,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/admin/file/project/github/new/kuaimai-cloud-demo/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/admin/project/kuaimai-cloud-demo/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
@@ -207,6 +209,34 @@
       <workItem from="1687676406255" duration="472000" />
       <workItem from="1687680668645" duration="509000" />
       <workItem from="1698313561402" duration="1593000" />
+      <workItem from="1699864701597" duration="418000" />
+      <workItem from="1701164027149" duration="690000" />
+      <workItem from="1701223692930" duration="2002000" />
+      <workItem from="1705632471042" duration="643000" />
+      <workItem from="1718267129426" duration="5009000" />
+      <workItem from="1718280671630" duration="6652000" />
+      <workItem from="1718358977915" duration="9000" />
+      <workItem from="1719212419494" duration="3697000" />
+      <workItem from="1719286799204" duration="6433000" />
+      <workItem from="1719885570612" duration="2302000" />
+      <workItem from="1719997083418" duration="1714000" />
+      <workItem from="1721645249086" duration="800000" />
+      <workItem from="1725008711904" duration="1689000" />
+      <workItem from="1740111859372" duration="747000" />
+      <workItem from="1740124066873" duration="1547000" />
+      <workItem from="1743384815762" duration="6291000" />
+      <workItem from="1743574085373" duration="595000" />
+      <workItem from="1744619782954" duration="1208000" />
+      <workItem from="1745287727867" duration="1499000" />
+      <workItem from="1745743173303" duration="6731000" />
+      <workItem from="1745913055991" duration="1449000" />
+      <workItem from="1745914708752" duration="130000" />
+      <workItem from="1746589988427" duration="347000" />
+      <workItem from="1747022295275" duration="9000" />
+      <workItem from="1747030368798" duration="2408000" />
+      <workItem from="1747194264534" duration="1595000" />
+      <workItem from="1747278668162" duration="758000" />
+      <workItem from="1747972436335" duration="2300000" />
     </task>
     <task id="LOCAL-00001" summary="add--lib">
       <created>1630053390611</created>
@@ -293,7 +323,167 @@
       <option name="project" value="LOCAL" />
       <updated>1698315287028</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update--1.0.5">
+      <option name="closed" value="true" />
+      <created>1699864785526</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699864785526</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update--1.0.5">
+      <option name="closed" value="true" />
+      <created>1699864910387</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699864910387</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update--1.0.5">
+      <option name="closed" value="true" />
+      <created>1699865106809</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699865106810</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update--1.0.6">
+      <option name="closed" value="true" />
+      <created>1718336246415</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718336246415</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update--1.0.7">
+      <option name="closed" value="true" />
+      <created>1719222061495</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1719222061495</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update--1.0.7">
+      <option name="closed" value="true" />
+      <created>1719222153003</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719222153003</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update--1.0.7">
+      <option name="closed" value="true" />
+      <created>1719222250430</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719222250430</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update--1.0.7">
+      <option name="closed" value="true" />
+      <created>1719286865039</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1719286865039</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update--1.0.8">
+      <option name="closed" value="true" />
+      <created>1719306412041</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1719306412041</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update--1.0.8">
+      <option name="closed" value="true" />
+      <created>1719306466532</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1719306466532</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update--1.0.9">
+      <option name="closed" value="true" />
+      <created>1719900567460</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1719900567460</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update--1.1.0">
+      <option name="closed" value="true" />
+      <created>1719997874878</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1719997874878</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update--1.1.1">
+      <option name="closed" value="true" />
+      <created>1725008914222</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1725008914223</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update--1.1.1">
+      <option name="closed" value="true" />
+      <created>1725009198865</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1725009198865</updated>
+    </task>
+    <task id="LOCAL-00027" summary="update--1.1.1">
+      <option name="closed" value="true" />
+      <created>1725009467594</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1725009467594</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update--1.1.2">
+      <option name="closed" value="true" />
+      <created>1725011549726</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1725011549726</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update--1.1.3">
+      <option name="closed" value="true" />
+      <created>1745397716415</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1745397716415</updated>
+    </task>
+    <task id="LOCAL-00030" summary="update--1.1.4">
+      <option name="closed" value="true" />
+      <created>1745914529831</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1745914529831</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update--1.1.4">
+      <option name="closed" value="true" />
+      <created>1745914819469</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1745914819469</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update--1.1.5">
+      <option name="closed" value="true" />
+      <created>1747031054913</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1747031054913</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -352,7 +542,54 @@
     <MESSAGE value="update--1.0.2" />
     <MESSAGE value="update--1.0.3" />
     <MESSAGE value="update--1.0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="update--1.0.4" />
+    <MESSAGE value="update--1.0.5" />
+    <MESSAGE value="update--1.0.6" />
+    <MESSAGE value="update--1.0.7" />
+    <MESSAGE value="update--1.0.8" />
+    <MESSAGE value="update--1.0.9" />
+    <MESSAGE value="update--1.1.0" />
+    <MESSAGE value="update--1.1.1" />
+    <MESSAGE value="update--1.1.2" />
+    <MESSAGE value="update--1.1.3" />
+    <MESSAGE value="update--1.1.4" />
+    <MESSAGE value="update--1.1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="update--1.1.5" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/kuaimai-core-1.0.6.jar!/com/kuaimai/core/client/KuaimaiClient.class</url>
+          <line>230</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/kuaimai-core-1.0.6.jar!/com/kuaimai/core/client/KuaimaiClient.class</url>
+          <line>358</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/kuaimai-core-1.0.6.jar!/com/kuaimai/core/client/KuaimaiClient.class</url>
+          <line>379</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/kuaimai-core-1.0.6.jar!/com/kuaimai/core/client/KuaimaiClient.class</url>
+          <line>442</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/kuaimai-core-1.0.7.jar!/com/kuaimai/core/client/KuaimaiClient.class</url>
+          <line>549</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib/kuaimai-core-1.1.2.jar!/com/kuaimai/core/client/KuaimaiClient.class</url>
+          <line>392</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/lib/kuaimai-core-1.0.0.jar!/com/kuaimai/core/request/EscInstructCreator.class" />
