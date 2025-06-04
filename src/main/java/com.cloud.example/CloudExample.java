@@ -78,7 +78,7 @@ public class CloudExample {
         TsplXmlWriteRequest tsplXmlWriteRequest=new TsplXmlWriteRequest();
         tsplXmlWriteRequest.setSn(testSn);
         tsplXmlWriteRequest.setXmlStr("<page><render><t>hello,word</t></render></page>");
-        tsplXmlWriteRequest.setPrintTimes(2);
+        tsplXmlWriteRequest.setPrintTimes(1);
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplXmlWriteRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
