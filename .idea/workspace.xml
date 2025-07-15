@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89a5d071-2724-40ca-a73d-9c60f5331896" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.2-jar-with-dependencies.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.3-jar-with-dependencies.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.cloud.example/CloudExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cloud.example/CloudExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +250,7 @@
       <workItem from="1751882396186" duration="595000" />
       <workItem from="1751888174182" duration="596000" />
       <workItem from="1752129011182" duration="1193000" />
-      <workItem from="1752204821085" duration="1614000" />
+      <workItem from="1752204821085" duration="6425000" />
     </task>
     <task id="LOCAL-00001" summary="add--lib">
       <created>1630053390611</created>
@@ -546,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750302395627</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update--1.2.2">
+      <option name="closed" value="true" />
+      <created>1752228897957</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1752228897957</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -621,7 +628,8 @@
     <MESSAGE value="update--1.1.9" />
     <MESSAGE value="update--1.2.0" />
     <MESSAGE value="update--1.2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="update--1.2.1" />
+    <MESSAGE value="update--1.2.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update--1.2.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
