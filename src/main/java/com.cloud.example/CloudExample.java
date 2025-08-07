@@ -56,7 +56,7 @@ public class CloudExample {
         /** 标签模板-间隙纸打印
          TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
          tsplTemplatePrintRequest.setSn(testSn);
-         tsplTemplatePrintRequest.setTemplateId(1634981864L);
+         tsplTemplatePrintRequest.setTemplateId(1634981612L);
          tsplTemplatePrintRequest.setRenderDataArray("[{\"table_test\":[{\"key_test\":\"3449394\"}]}]");
          tsplTemplatePrintRequest.setPrintTimes(1);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
@@ -140,37 +140,37 @@ public class CloudExample {
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(adjustDeviceDensityRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
-        /********菜鸟云打印KM360C专用start********/
+        /********云打印KM360C专用start********/
 
-        //1.获取菜鸟云打印机code,code有效期时间为5分钟**/
+        //1.KM360C获取云打印机code,code有效期时间为5分钟**/
         /**GetCainiaoCodeRequest getCainiaoCodeRequest = new GetCainiaoCodeRequest();
         getCainiaoCodeRequest.setImei("1233");
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(getCainiaoCodeRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
-        //2.绑定菜鸟云打印机
+        //2.KM360C绑定云打印机
         /**CainiaoBindRequest cainiaoBindRequest = new CainiaoBindRequest();
         cainiaoBindRequest.setImei("123");
         cainiaoBindRequest.setCode("0597");
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(cainiaoBindRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
-        //3.菜鸟图片打印**/
+        //3.KM360C图片打印**/
         /**CainiaoPrintRequest cainiaoPrintRequest = new CainiaoPrintRequest();
         cainiaoPrintRequest.setImei("1234");
         cainiaoPrintRequest.setImageBase64Data("data:image/png;base64,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");
         ResponseEnvelope acsResponse =kuaimaiClient.getAcsResponse(cainiaoPrintRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));
 
-         //菜鸟云打印机标签模板-间隙纸打印
-        /**TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
+         //KM360C云打印机标签模板-间隙纸打印
+         TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
          tsplTemplatePrintRequest.setImei("123");
          tsplTemplatePrintRequest.setTemplateId(1634959702L);
          tsplTemplatePrintRequest.setRenderDataArray("[{\"table_test\":[{\"key_test\":\"3449394\"}]}]");
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
          System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
-        /********菜鸟云打印KM360C专用end********/
+        /********云打印KM360C专用end********/
     }
 
 
