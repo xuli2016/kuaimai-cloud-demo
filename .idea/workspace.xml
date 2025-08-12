@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89a5d071-2724-40ca-a73d-9c60f5331896" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.5-jar-with-dependencies.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.7-jar-with-dependencies.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.7.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/kuaimai-core-1.2.3-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.4-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/kuaimai-core-1.2.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/kuaimai-core-1.2.4.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.cloud.example/CloudExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cloud.example/CloudExample.java" afterDir="false" />
     </list>
@@ -256,7 +254,9 @@
       <workItem from="1752204821085" duration="7130000" />
       <workItem from="1753243371033" duration="665000" />
       <workItem from="1753674860131" duration="41000" />
-      <workItem from="1753870058136" duration="1818000" />
+      <workItem from="1753870058136" duration="2626000" />
+      <workItem from="1753960235405" duration="5531000" />
+      <workItem from="1754981196296" duration="2761000" />
     </task>
     <task id="LOCAL-00001" summary="add--lib">
       <created>1630053390611</created>
@@ -567,7 +567,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752572677785</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="update--1.2.5">
+      <option name="closed" value="true" />
+      <created>1753874913861</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1753874913861</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update--1.2.6">
+      <option name="closed" value="true" />
+      <created>1754535920298</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1754535920298</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -619,8 +635,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add--lib" />
-    <MESSAGE value="update--lib" />
     <MESSAGE value="update--verion" />
     <MESSAGE value="update--template" />
     <MESSAGE value="update--1.0.2" />
@@ -644,7 +658,9 @@
     <MESSAGE value="update--1.2.1" />
     <MESSAGE value="update--1.2.2" />
     <MESSAGE value="update--1.2.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="update--1.2.3" />
+    <MESSAGE value="update--1.2.5" />
+    <MESSAGE value="update--1.2.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="update--1.2.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
