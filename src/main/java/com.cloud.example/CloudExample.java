@@ -127,9 +127,13 @@ public class CloudExample {
         /** pdf直接打印（间隙纸）
         TsplPdfPrintRequest tsplPdfPrintRequest = new TsplPdfPrintRequest();
         tsplPdfPrintRequest.setSn(testSn);
-        tsplPdfPrintRequest.setFile(new File("/456.pdf"));
+        tsplPdfPrintRequest.setFile(new File("/pdf/箱标.pdf"));
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplPdfPrintRequest);
-        System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+        System.out.println(JSONUtil.toJsonStr(acsResponse));
+        //pdf多页打印（间隙纸）
+        ResponseEnvelope responseEnvelope = kuaimaiClient.tsplPdfsPrint(tsplPdfPrintRequest);
+        System.out.println(JSONUtil.toJsonStr(responseEnvelope)); **/
+
 
         /**图片直接打印（连续纸)
         EscImageRequest escImageRequest = new EscImageRequest();
@@ -142,9 +146,12 @@ public class CloudExample {
         /** pdf直接打印（连续纸)
         EscPdfPrintRequest escPdfPrintRequest=new EscPdfPrintRequest();
         escPdfPrintRequest.setSn(testSn);
-        escPdfPrintRequest.setFile(new File("/456.pdf"));
+        escPdfPrintRequest.setFile(new File("/pdf/箱标.pdf"));
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(escPdfPrintRequest);
-        System.out.println(JSONUtil.toJsonStr(acsResponse));**/
+        System.out.println(JSONUtil.toJsonStr(acsResponse));
+        //pdf多页打印（连续纸）
+        ResponseEnvelope responseEnvelope = kuaimaiClient.escPdfsPrint(escPdfPrintRequest);
+        System.out.println(JSONUtil.toJsonStr(responseEnvelope));**/
 
         /**语言播报
         BroadcastRequest broadcastRequest=new BroadcastRequest();
