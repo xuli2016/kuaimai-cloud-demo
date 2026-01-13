@@ -40,7 +40,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="16" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
   <component name="SuppressionsComponent">

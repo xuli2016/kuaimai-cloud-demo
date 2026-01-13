@@ -89,7 +89,7 @@ public class CloudExample {
         /**自定义xml-间隙纸打印
         TsplXmlWriteRequest tsplXmlWriteRequest=new TsplXmlWriteRequest();
         tsplXmlWriteRequest.setSn(testSn);
-        tsplXmlWriteRequest.setXmlStr("<page><render><t>hello,word</t></render></page>");
+        tsplXmlWriteRequest.setXmlStr("");
         tsplXmlWriteRequest.setPrintTimes(1);
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplXmlWriteRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));**/
