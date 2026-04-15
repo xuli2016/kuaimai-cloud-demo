@@ -21,9 +21,9 @@ import java.util.List;
  */
 public class CloudExample {
 
-    public final static String accessKey="快麦开放平台申请的appid";
-    public final static String secret="快麦开放平台申请的secret";
-    private static String testSn="打印机的序列号";
+     public final static String accessKey="快麦开放平台申请的appid";
+     public final static String secret="快麦开放平台申请的secret";
+     private static String testSn="打印机的序列号";
 
     public static void main(String[] args) throws Exception{
         KuaimaiClient kuaimaiClient=KuaimaiClient.createClient(accessKey,secret);
@@ -67,9 +67,10 @@ public class CloudExample {
         /** 标签模板-间隙纸打印
          TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
          tsplTemplatePrintRequest.setSn(testSn);
-         tsplTemplatePrintRequest.setTemplateId(1634981612L);
+         tsplTemplatePrintRequest.setTemplateId(1634989639L);
          tsplTemplatePrintRequest.setRenderDataArray("[{\"table_test\":[{\"key_test\":\"3449394\"}]}]");
          tsplTemplatePrintRequest.setPrintTimes(1);
+         tsplTemplatePrintRequest.setImage(true);
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
          System.out.println(JSONUtil.toJsonStr(acsResponse));**/
 
@@ -146,7 +147,7 @@ public class CloudExample {
         /** pdf直接打印（连续纸)
         EscPdfPrintRequest escPdfPrintRequest=new EscPdfPrintRequest();
         escPdfPrintRequest.setSn(testSn);
-        escPdfPrintRequest.setFile(new File("/pdf/箱标.pdf"));
+        escPdfPrintRequest.setFile(new File("/Users/admin/java/project/guangyun/demo/123.pdf"));
         ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(escPdfPrintRequest);
         System.out.println(JSONUtil.toJsonStr(acsResponse));
         //pdf多页打印（连续纸）
@@ -200,8 +201,8 @@ public class CloudExample {
 
          //KM360C云打印机标签模板-间隙纸打印
          TsplTemplatePrintRequest tsplTemplatePrintRequest=new TsplTemplatePrintRequest();
-         tsplTemplatePrintRequest.setImei("123");
-         tsplTemplatePrintRequest.setTemplateId(1634959702L);
+         tsplTemplatePrintRequest.setImei("1234");
+         tsplTemplatePrintRequest.setTemplateId(1634989639L);
          tsplTemplatePrintRequest.setRenderDataArray("[{\"table_test\":[{\"key_test\":\"3449394\"}]}]");
          ResponseEnvelope acsResponse = kuaimaiClient.getAcsResponse(tsplTemplatePrintRequest);
          System.out.println(JSONUtil.toJsonStr(acsResponse));**/
